@@ -12,7 +12,7 @@ module.exports = function(environment) {
       databaseURL: 'https://fir-cebc3.firebaseio.com',
       storageBucket: 'fir-cebc3.appspot.com'
     },
-       torii: {
+    torii: {
       sessionServiceName: 'session'
     },
     EmberENV: {

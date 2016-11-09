@@ -20,9 +20,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
-          {{#link-to 'profile' tagName="li"}}
-            <a href="">{{session.currentUser.displayName}}</a>
-          {{/link-to}}
+          {{#link-to 'profile' tagName="li"}}<a href="">{{session.currentUser.displayName}}</a>{{/link-to}}
           <li><a {{action "signOut"}}>Sign Out</a></li>
         {{else}}
           <li>
@@ -33,4 +31,3 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
